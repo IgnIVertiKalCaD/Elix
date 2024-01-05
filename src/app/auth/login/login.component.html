@@ -1,0 +1,26 @@
+<main>
+    <p class="d-flex justify-center">Вход</p>
+
+    <div class="child">
+        <app-input-text
+                placeholder="Никнейм или почта"></app-input-text>
+        <app-input-text
+                type="password"
+                placeholder="Пароль"></app-input-text>
+
+        <div class="remember d-flex align-center justify-space-between">
+            <app-checkbox>
+                <p class="text-label">Запомнить меня</p>
+            </app-checkbox>
+            <app-nav-button className="auxiliary" link="/recovery">Забыли пароль?</app-nav-button>
+            <!--            <a routerLink="/recovery">Забыли пароль?</a>-->
+        </div>
+
+        <app-button>Войти</app-button>
+
+        <div class="other">
+            Если у Вас ещё нет аккаунта, вы можете
+            <app-nav-button className="auxiliary" link="/registration">зарегистрироваться</app-nav-button>.
+        </div>
+    </div>
+</main>

@@ -1,0 +1,63 @@
+@import 'variables';
+
+.material-checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  p {
+    color: $gray-085;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.28px;
+  }
+
+  .checkmark {
+    border-radius: 12px;
+    border: 1px solid $base-border-color;
+    background: $base-bg-color;
+
+    transition: .05s ease-in;
+
+    position: relative;
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+
+    margin-right: 7px;
+
+    > svg {
+      transition: .05s ease-in;
+      opacity: 0;
+      position: absolute;
+      margin: auto;
+      top: 2px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+    &.checked {
+      background: $accent-color;
+
+      > svg {
+        opacity: 1;
+      }
+
+    }
+  }
+
+
+  input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+}
+
+@-moz-document url-prefix() {
+  .checkmark > svg {
+    top: 0;
+  }
+}

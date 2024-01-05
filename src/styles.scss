@@ -1,0 +1,58 @@
+@import "mixin";
+
+@mixin dev {
+  min-width: 850px;
+  max-width: 850px;
+
+  min-height: 550px;
+  max-height: 550px;
+}
+
+:root {
+  font-family: 'Inter', sans-serif;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  @include dev;
+  background: #121212;
+}
+
+body {
+  @include dev;
+
+  margin: 8px;
+
+  outline: 1px solid rgba(71, 77, 80, 0.64);
+  border-radius: 25px;
+
+  > app-root {
+    display: block;
+
+    .layout-center {
+      height: 550px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+  }
+}
+
+html, body {
+  user-select: none;
+  overflow: hidden;
+}
+
+
+
+.icon {
+  &.windows {
+    border-radius: 4px;
+  }
+}

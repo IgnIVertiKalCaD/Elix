@@ -1,0 +1,84 @@
+@import 'variables';
+
+button {
+  cursor: pointer;
+
+  background: $base-bg-color;
+  border-radius: $base-rounded;
+  color: $white-09;
+
+  width: 100%;
+
+  font-style: normal;
+  line-height: normal;
+
+  transition: background-color .1s ease-in;
+
+  &.default {
+    border: 1px solid $accent-color;
+
+    height: 40px;
+
+    color: $white-09;
+    font-size: 17px;
+    font-weight: 600;
+
+    &:hover {
+      background: $accent-color;
+
+      &:active {
+
+      }
+    }
+  }
+
+  &.only-icon {
+    display: flex;
+    padding: 8px;
+
+    &.red {
+      border: 1px solid $red;
+      stroke: $red;
+      transition: .1s ease-in;
+
+      &:hover {
+        background: $red;
+        stroke: $base-bg-color;
+
+        &:active {
+
+        }
+      }
+    }
+  }
+
+  //profile
+  &.all-sessions {
+    border-radius: 11px;
+    border: 1px solid $base-border-color;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    padding: 5px 11px 6px 12px;
+  }
+
+  &.other {
+    border-radius: 11px;
+    border: 1px solid $base-border-color;
+
+    padding: 9px 0;
+
+    color: $white-1;
+    font-size: 14px;
+    font-weight: 500;
+
+    &:hover {
+      background: $accent-color;
+
+      &:active {
+
+      }
+    }
+  }
+}

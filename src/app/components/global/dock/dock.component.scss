@@ -1,0 +1,44 @@
+@import 'variables';
+
+:host {
+  display: block;
+}
+
+footer {
+  color: $gray-1;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+
+  &.absolute {
+    position: absolute;
+    bottom: 0;
+  }
+
+  &.insert {
+    position: relative;
+  }
+
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  > section {
+    display: flex;
+    align-items: center;
+
+    border-radius: $base-rounded;
+    border: 1px solid $base-border-color;
+    background: $base-bg-color;
+
+    padding: 5px;
+
+    app-nav-button {
+      margin-right: 5px;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}

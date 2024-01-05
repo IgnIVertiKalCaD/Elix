@@ -1,0 +1,10 @@
+<a [class]="className"
+   [routerLink]="link"
+   [routerLinkActive]="routerLinkActive"
+
+   ariaCurrentWhenActive="page">
+
+    <ng-content/>
+
+    <i *ngIf="icon" [innerHTML]="icon | safe"></i>
+</a>

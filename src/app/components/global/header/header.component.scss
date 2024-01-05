@@ -1,0 +1,85 @@
+@import "variables";
+
+.absolute {
+  margin: 8px 8px 0 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.insert {
+  margin: 8px 8px 7px 8px;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+
+  .logout, .account, .center, .settings, .control {
+    border-radius: $base-rounded;
+    border: 1px solid $base-border-color;
+    background: $base-bg-color;
+
+  }
+
+  .left {
+    display: flex;
+    justify-self: start;
+
+    .logout {
+      margin-left: 10px;
+      padding: 7px;
+    }
+
+    .account {
+      padding: 4px;
+
+      > img {
+        border-radius: 12px;
+      }
+
+      .username {
+        padding: 0 15px;
+
+        color: $gray-1;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .center {
+    justify-self: center;
+    padding: 0 26px;
+
+    color: $gray-1;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .right {
+    justify-self: end;
+
+    .settings, & > .control {
+      padding: 7px;
+    }
+
+    .collapse, > i {
+      margin-right: 10px
+    }
+
+    .collapse, .close {
+      display: flex;
+    }
+
+    > i {
+      display: flex;
+    }
+  }
+}
+

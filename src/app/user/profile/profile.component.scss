@@ -1,0 +1,83 @@
+@import 'variables';
+
+.block-sessions, table, .skin-viewer, .block-other {
+  border-radius: $base-rounded;
+  border: 1px solid $base-border-color;
+  background: $base-bg-color;
+}
+
+section {
+  .skin-viewer {
+    width: 207px;
+    height: 207px;
+  }
+}
+
+.block-control {
+  .block-upload-skin, .block-upload-cape {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+table {
+  padding: 14px;
+  width: max-content;
+
+  .spacer {
+    height: 5px
+  }
+
+  td {
+    font-size: 14px;
+
+    &:first-child {
+      color: $white-09;
+      font-weight: 500;
+    }
+
+    &:last-child {
+      color: $gray-1;
+      font-weight: 400;
+      padding-left: 30px;
+    }
+  }
+}
+
+.block-sessions {
+  flex-direction: column;
+
+  padding: 6px;
+
+  .control-sessions {
+    justify-content: space-between;
+    align-items: center;
+
+    > p {
+      color: $gray-075;
+      font-size: 14px;
+      text-align: center;
+      font-weight: 500;
+    }
+  }
+}
+
+.block-other {
+  width: 100%;
+  padding: 8px 7px;
+
+  > * {
+    margin-bottom: 8px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  > p {
+    color: $gray-075;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}

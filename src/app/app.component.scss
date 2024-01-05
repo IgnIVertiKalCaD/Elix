@@ -1,0 +1,11 @@
+$components-list: 'registration', 'login', 'recovery', 'error502', 'maintenance';
+
+@each $c in $components-list {
+  app-#{$c} {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+}

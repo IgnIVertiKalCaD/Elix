@@ -1,0 +1,16 @@
+<div class="error">
+    <app-error>
+        <p class="title_error">Ошибка</p>
+        <i class="icon" [innerHTML]="Icons.critical_error | safe"></i>
+    </app-error>
+    <p class="mt-5">
+        Упс! Похоже, сервер упал в лаву и поэтому лаунчер не работает.
+        <br>
+        Пока мы ищем воду, чтобы потушить сервер,
+        <br>
+        попробуйте <a href="">посетить наш сайт</a>.
+    </p>
+    <p class="mt-5">
+        Попытка подключения через &nbsp; <span class="pos-fixed">{{ count }}</span>
+    </p>
+</div>

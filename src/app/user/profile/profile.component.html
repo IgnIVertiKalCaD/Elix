@@ -1,0 +1,76 @@
+<div class="d-flex" style="
+  margin: 7px 8px;
+  align-items: flex-start;
+">
+    <section class="w-fit-content ">
+        <div class="skin-viewer"></div>
+
+        <div class="block-control mt-2">
+            <div class="block-upload-skin">
+                <app-input-file
+                        text="Установить скин">
+                </app-input-file>
+
+                <app-button className="only-icon" color="red">
+                    <i [outerHTML]="Icons.trash | safe"></i>
+                </app-button>
+            </div>
+            <div class="block-upload-cape mt-2">
+                <app-input-file
+                        text="Установить плащ">
+                </app-input-file>
+
+                <app-button className="only-icon" color="red">
+                    <i [outerHTML]="Icons.trash | safe"></i>
+                </app-button>
+            </div>
+        </div>
+    </section>
+    <section class="ml-2">
+        <table>
+            <tbody>
+            <tr>
+                <td>Никнейм</td>
+                <td>IXliyNez</td>
+            </tr>
+            <tr class="spacer"></tr>
+            <tr>
+                <td>Email</td>
+                <td>terexikminecraft&#64;gmail.com</td>
+            </tr>
+            <tr class="spacer"></tr>
+            <tr>
+                <td>Дата регистрации</td>
+                <td>1 января 2024 года</td>
+            </tr>
+            <tr class="spacer"></tr>
+            <tr>
+                <td>Проведено в игре</td>
+                <td>2 дня 7 часов 43 минуты</td>
+            </tr>
+            <tr class="spacer"></tr>
+            <tr>
+                <td>Последняя игра</td>
+                <td>25 января 2024 года</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="block-sessions d-flex mt-2">
+            <div class="control-sessions d-flex">
+                <p class="ml-2">Текущая сессия</p>
+                <app-button className="all-sessions">Вся история</app-button>
+            </div>
+            <app-chips class="mt-1"
+                       OS="Windows"
+                       IP="255.255.255.255"
+                       time="15:05">
+                <i [outerHTML]="Icons.windows | safe"></i>
+            </app-chips>
+        </div>
+    </section>
+    <section class="block-other ml-2">
+        <p>Прочее</p>
+        <app-button className="other">Изменить почту</app-button>
+        <app-button className="other">Изменить пароль</app-button>
+    </section>
+</div>

@@ -1,0 +1,47 @@
+@import "variables";
+
+a {
+
+
+  &.default {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+
+    color: $gray-1;
+
+    border: 1px solid transparent;
+
+    padding: 6px 7px;
+
+    > i {
+      opacity: 0.75;
+      display: flex;
+      margin-left: 5px;
+    }
+
+    &.active {
+      color: $white-09;
+
+      border-radius: $dock-rounded-a;
+      border: 1px solid $dock-active-border-color;
+      background: $dock-active-bg-color;
+
+      > i {
+        opacity: 1;
+      }
+    }
+  }
+
+  &.auxiliary {
+    color: #1C70EF;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.28px;
+
+
+  }
+
+}

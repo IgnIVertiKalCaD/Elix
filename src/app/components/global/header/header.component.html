@@ -1,0 +1,22 @@
+<header [class]="mode">
+    <div class="left">
+        <div class="account" pattern_1_center><img ngSrc="../../../../assets/steve.png" width="27" height="27"
+                                                   alt="avatar">
+            <p class="username">{{ username }}</p>
+        </div>
+        <div class="logout" pattern_1_center>
+            <i [outerHTML]="Icons.logout_from_account | safe"></i>
+        </div>
+    </div>
+    <div class="center logo" pattern_1_center>
+        <p>ProjectName</p>
+    </div>
+    <div class="right buttons" pattern_1_center>
+        <i class="settings" [innerHTML]="Icons.settings | safe"></i>
+
+        <div class="d-flex control">
+            <i class="collapse" [innerHTML]="Icons.collapse | safe"></i>
+            <i class="close" [innerHTML]="Icons.close | safe"></i>
+        </div>
+    </div>
+</header>

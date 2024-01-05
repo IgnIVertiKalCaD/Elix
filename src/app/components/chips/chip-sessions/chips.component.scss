@@ -1,0 +1,25 @@
+@import "variables";
+
+.chips {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 9px 10px;
+  border-radius: 11px;
+  border: 1px solid $base-border-color;
+  background: $base-bg-color;
+
+
+  > span {
+    display: flex;
+
+    color: $gray-075;
+    font-size: 14px;
+    font-weight: 500;
+
+    > p {
+      color: $white-09;
+    }
+  }
+}

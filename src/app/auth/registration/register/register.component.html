@@ -1,0 +1,28 @@
+<main>
+    <p class="d-flex justify-center">Регистрация</p>
+
+    <div class="child">
+        <app-input-text
+                placeholder="Никнейм или почта"></app-input-text>
+        <app-input-text
+                placeholder="Электронная почта"></app-input-text>
+        <app-input-text
+                type="password"
+                placeholder="Пароль"></app-input-text>
+        <app-input-text
+                type="password"
+                placeholder="Повторите пароль"></app-input-text>
+
+        <div class="remember d-flex align-center justify-space-between">
+            <app-checkbox>
+                <p class="text-label">Согласен с правилами проекта.</p>
+            </app-checkbox>
+        </div>
+
+        <app-button>Зарегистрироваться</app-button>
+
+        <div class="other">
+            Если у Вас уже есть аккаунт, вы можете сразу <a routerLink="/login">войти</a>.
+        </div>
+    </div>
+</main>

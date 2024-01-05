@@ -1,0 +1,21 @@
+@import 'variables';
+
+#file-input {
+  display: none;
+}
+label {
+  &.default {
+    border-radius: $base-rounded;
+    border: 1px solid $base-border-color;
+    background: $base-bg-color;
+    color: $white-1;
+
+    display: block;
+    width: fit-content;
+
+    padding: 9px 23px;
+
+    font-size: 14px;
+    font-weight: 500;
+  }
+}

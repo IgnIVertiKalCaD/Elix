@@ -1,0 +1,16 @@
+@import "variables";
+:host {
+  display: block;
+}
+.sub {
+  display: flex;
+  justify-content: space-between;
+
+  > a {
+    color: $accent-color;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.28px;
+  }
+}

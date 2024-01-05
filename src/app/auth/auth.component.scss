@@ -1,0 +1,47 @@
+@import "variables";
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: min-content;
+
+  .remember {
+    a {
+      text-align: center;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: -0.3px;
+    }
+  }
+
+  .other {
+    color: $gray-075;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.28px;
+  }
+
+  > p {
+    color: $white-1;
+    font-size: 38px;
+    font-weight: 600;
+    letter-spacing: -0.76px;
+  }
+
+  .child {
+    display: flex;
+    flex-direction: column;
+  }
+
+  > .child > *,
+  > * {
+    margin-bottom: 12px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+}

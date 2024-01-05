@@ -1,0 +1,19 @@
+<main>
+    <p class="d-flex justify-center">Восстановление</p>
+    <div class="other">
+        После ввода никнейма/почты Вам на почту будет выслано письмо с кодом восстановления.
+    </div>
+    <div class="pr-2 pl-2 child">
+        <app-input-text
+                placeholder="Никнейм или почта"
+        />
+
+        <app-button>Далее</app-button>
+
+        <div class="other">
+            <app-nav-button className="auxiliary" [link]="link_registration">Зарегистрироваться</app-nav-button>
+            или
+            <app-nav-button className="auxiliary" [link]="link_login">Войти</app-nav-button>
+        </div>
+    </div>
+</main>

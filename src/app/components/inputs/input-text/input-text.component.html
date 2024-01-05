@@ -1,0 +1,11 @@
+<div class="pos-relative">
+    <input
+            [class]="className"
+            [placeholder]="placeholder"
+            [type]="selectType()"
+    >
+    <span *ngIf="type === 'password'" class="toggle" centerPosAb (click)="toggleShowPassword()">
+        <i *ngIf="!isHide" [innerHTML]="Icons.show_password_icon | safe"></i>
+        <i *ngIf="isHide" [innerHTML]="Icons.hide_password_icon | safe"></i>
+    </span>
+</div>

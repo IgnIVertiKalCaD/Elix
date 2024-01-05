@@ -1,0 +1,45 @@
+@import 'variables';
+
+@-moz-document url-prefix() {
+  input[type="password"] {
+      font-size: 10px !important;
+      letter-spacing: 2px !important;
+    }
+}
+
+input {
+  outline: none;
+
+  &::placeholder {
+    opacity: 1;
+    font-size: 16px;
+    letter-spacing: -0.32px;
+    color: $gray-05;
+  }
+}
+
+.default {
+  border-radius: $base-rounded;
+  border: 1px solid $base-border-color;
+  background: $base-bg-color;
+
+  color: $white-09;
+
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.32px;
+
+  width: 290px;
+  height: 50px;
+  padding: 0 16.5px;
+}
+.toggle {
+  cursor: pointer;
+  right: 16px;
+  height: 18px;
+
+  > i {
+    height: 18px;
+
+  }
+}
