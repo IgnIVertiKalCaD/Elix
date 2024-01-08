@@ -1,9 +1,16 @@
 @import 'variables';
 
+:host {
+  width: 100%;
+}
+
 #file-input {
   display: none;
 }
+
 label {
+  cursor: pointer;
+
   &.default {
     border-radius: $base-rounded;
     border: 1px solid $base-border-color;
@@ -11,11 +18,20 @@ label {
     color: $white-1;
 
     display: block;
-    width: fit-content;
-
-    padding: 9px 23px;
-
+    padding: 9px 0;
     font-size: 14px;
     font-weight: 500;
+
+    text-align: center;
+
+    transition: .1s ease-in;
+
+    &:hover {
+      background: $accent-color;
+
+      &:active {
+
+      }
+    }
   }
 }

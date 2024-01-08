@@ -43,7 +43,7 @@ button {
 
       &:hover {
         background: $red;
-        stroke: $base-bg-color;
+        stroke: $white-09;
 
         &:active {
 
@@ -61,6 +61,14 @@ button {
     font-weight: 500;
 
     padding: 5px 11px 6px 12px;
+
+    &:hover {
+      background: $accent-color;
+
+      &:active {
+
+      }
+    }
   }
 
   &.other {

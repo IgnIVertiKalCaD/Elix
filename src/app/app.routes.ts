@@ -12,6 +12,7 @@ import {Error502Component} from "./features/errors/servers/error502/error502.com
 import {ProfileComponent} from "./user/profile/profile.component";
 import {RegisterComponent} from "./auth/registration/register/register.component";
 import {RegEnterCodeComponent} from "./auth/registration/enter-code/reg-enter-code.component";
+import {ServersComponent} from "./user/servers/servers.component";
 
 export const routes: Routes = [
     {
@@ -29,7 +30,7 @@ export const routes: Routes = [
                     {
                         path: '',
                         component: RegisterComponent,
-                    },{
+                    }, {
                         path: 'code',
                         component: RegEnterCodeComponent,
                     },
@@ -42,15 +43,16 @@ export const routes: Routes = [
                     {
                         path: '',
                         component: EnterEmailComponent,
-                    },{
+                    }, {
                         path: 'code',
                         component: RecoveryEnterCodeComponent,
-                    },{
+                    }, {
                         path: 'change',
                         component: ChangePasswordComponent,
                     },
                 ]
-            }, {
+            },
+            {
                 path: 'rab',
                 component: MaintenanceComponent,
             }, {
@@ -66,6 +68,10 @@ export const routes: Routes = [
             {
                 path: 'profile',
                 component: ProfileComponent,
+            },
+            {
+                path: 'servers',
+                component: ServersComponent,
             }
         ]
     },

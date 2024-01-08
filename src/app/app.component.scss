@@ -1,4 +1,4 @@
-$components-list: 'registration', 'login', 'recovery', 'error502', 'maintenance';
+$components-list: 'registration', 'login', 'servers' ,'recovery', 'error502', 'maintenance';
 
 @each $c in $components-list {
   app-#{$c} {

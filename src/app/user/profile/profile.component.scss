@@ -1,4 +1,10 @@
 @import 'variables';
+:host {
+  > div {
+    margin: 0 8px;
+    align-items: flex-start;
+  }
+}
 
 .block-sessions, table, .skin-viewer, .block-other {
   border-radius: $base-rounded;
